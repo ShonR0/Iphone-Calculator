@@ -1,0 +1,115 @@
+.calculator-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.calculator-container > form {
+    padding: 5px;
+    padding-top: 60px;
+    width: 100%;
+    background-color: black ;
+    display: grid;
+    grid-template-columns: repeat(4, fr);
+    grid-template-rows: repeat(4, fr);
+}
+
+.first {
+    grid-column: span 4;
+    height: 60px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: transparent;
+    /* border: none; */
+
+}
+
+.zero {
+    grid-column: span 2;
+    border-radius: 50px;
+    border: none;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+.clickable-input {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.clickable-input.clicked {
+    background-color: white;
+    color: orange;
+}
+
+.color-change:active {
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+.color-change:not(:active) {
+    transition: 0.3s;
+}
+
+.color-change-first-row:active {
+    background-color: rgba(255, 255, 255, 0.71);
+}
+
+.color-change-first-row:not(:active) {
+    transition: 0.3s;
+}
+
+.color-change-last-row:active {
+    background-color: rgb(255, 193, 77);
+}
+
+.color-change-last-row:not(:active) {
+    transition: 0.3s;
+}
+
+input {
+    margin: 5px;
+}
+
+.first-column {
+    background-color: #817b7b;
+}
+
+.last-row {
+    background-color: orange;
+    color: white;
+}
+
+.numbers {
+    background-color: rgb(48, 52, 55);
+    color: rgb(218, 218, 218);
+}
+
+input[type="submit"] {
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+}
+
+input[type="button"] {
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+}
+
+input[type="text"] {
+    /* font-size: 50px; */
+    /* font-weight: 300; */
+    text-align: right;
+}
+
+input[data-style="unique"] {
+    text-align: left;
+    padding-left: 19%;
+}
