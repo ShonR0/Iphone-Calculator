@@ -9,7 +9,7 @@
 <body>
     <div class="calculator-container">
         <form>
-            <input class="first" type="text" disabled>
+            <input id="output" class="first" type="text" readonly>
             <input class="button color-change-first-row first-column" type="button" value="AC"> 
             <input class="button color-change-first-row first-column" type="button" value="+/-"> 
             <input class="button color-change-first-row first-column" type="button" value="%">  
@@ -25,7 +25,9 @@
             <input class="button color-change numbers" type="button" value="6">  
             <input class="button color-change last-row color-change-last-row clickable-input"
             id="action" onclick="changeColor(this);" type="button" value="-">  
-            <input class="button color-change numbers" type="button" value="1">  
+            <!--  -->
+            <input id="printButton" class="button color-change numbers" type="button" value="1">  
+            <!--  -->
             <input class="button color-change numbers" type="button" value="2">  
             <input class="button color-change numbers" type="button" value="3">  
             <input class="button color-change last-row color-change-last-row clickable-input" 
@@ -52,6 +54,6 @@
             previousInput = inputElement;
         }
         </script>
-        
+        <script src="index.js"></script>
 </body>
 </html>
