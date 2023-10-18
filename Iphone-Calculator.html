@@ -40,16 +40,13 @@
         
     <script>
         let previousInput = null; // Store the previously clicked input
-        
         function changeColor(inputElement) {
             // Restore the original color of the previously clicked input
             if (previousInput !== null) {
                 previousInput.classList.remove("clicked");
             }
-        
             // Change the color of the clicked input
             inputElement.classList.add("clicked");
-        
             // Update the previously clicked input to the current one
             previousInput = inputElement;
         }
