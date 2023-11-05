@@ -38,7 +38,7 @@ document.getElementById("printNine").addEventListener("click", function () {
     var outputField = document.getElementById("output");
     outputField.value += "9";
 });
-document.getElementById("printTen").addEventListener("click", function () {
+document.getElementById("printZero").addEventListener("click", function () {
     var outputField = document.getElementById("output");
     outputField.value += "0";
 });
